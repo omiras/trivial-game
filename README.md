@@ -29,7 +29,7 @@ En esta primera iteración, tu objetivo es implementar el endpoint `/api/questio
 }
 ```
 
-> Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/question` desde tu navegador o usando una herramienta como Thunderclient o curl.
+> Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/question` desde tu navegador o usando una herramienta como [Thunderclient](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) o curl.
 
 
 
