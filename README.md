@@ -55,7 +55,7 @@ En esta segunda iteración, tu objetivo es implementar el endpoint `/api/categor
 ["Geografía", "Ciencia", "Literatura", "Historia", "Arte"]
 ```
 
-> Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/categories` desde tu navegador o usando una herramienta como Postman o curl.
+> Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/categories` desde tu navegador o usando una herramienta como Thunderclient o curl.
 
 ## Iteración 3: Filtrar preguntas por categoría usando query string
 
