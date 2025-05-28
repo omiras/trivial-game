@@ -1,0 +1,122 @@
+[
+  {
+    "question": "¿Cuál es la capital de Francia?",
+    "options": ["París", "Londres", "Roma", "Berlín"],
+    "answer": "París",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿Cuál es el planeta más grande del sistema solar?",
+    "options": ["Tierra", "Júpiter", "Marte", "Saturno"],
+    "answer": "Júpiter",
+    "category": "Ciencia"
+  },
+  {
+    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "options": ["Gabriel García Márquez", "Mario Vargas Llosa", "Pablo Neruda", "Julio Cortázar"],
+    "answer": "Gabriel García Márquez",
+    "category": "Literatura"
+  },
+  {
+    "question": "¿En qué año llegó el hombre a la Luna?",
+    "options": ["1969", "1972", "1959", "1980"],
+    "answer": "1969",
+    "category": "Historia"
+  },
+  {
+    "question": "¿Cuál es el río más largo del mundo?",
+    "options": ["Nilo", "Amazonas", "Yangtsé", "Misisipi"],
+    "answer": "Amazonas",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿Qué elemento químico tiene el símbolo 'O'?",
+    "options": ["Oro", "Oxígeno", "Osmio", "Oxalato"],
+    "answer": "Oxígeno",
+    "category": "Ciencia"
+  },
+  {
+    "question": "¿Quién pintó la Mona Lisa?",
+    "options": ["Leonardo da Vinci", "Miguel Ángel", "Rafael", "Donatello"],
+    "answer": "Leonardo da Vinci",
+    "category": "Arte"
+  },
+  {
+    "question": "¿Cuál es el país más grande del mundo?",
+    "options": ["Rusia", "Canadá", "China", "Estados Unidos"],
+    "answer": "Rusia",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿En qué continente está Egipto?",
+    "options": ["África", "Asia", "Europa", "América"],
+    "answer": "África",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿Cuál es la fórmula química del agua?",
+    "options": ["H2O", "CO2", "O2", "NaCl"],
+    "answer": "H2O",
+    "category": "Ciencia"
+  },
+  {
+    "question": "¿Cuál es el océano más grande del mundo?",
+    "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    "answer": "Pacífico",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿Quién fue el primer presidente de Estados Unidos?",
+    "options": ["George Washington", "Abraham Lincoln", "Thomas Jefferson", "John Adams"],
+    "answer": "George Washington",
+    "category": "Historia"
+  },
+  {
+    "question": "¿Cuál es el metal cuyo símbolo químico es Fe?",
+    "options": ["Hierro", "Flúor", "Francio", "Fósforo"],
+    "answer": "Hierro",
+    "category": "Ciencia"
+  },
+  {
+    "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
+    "options": ["Miguel de Cervantes", "Lope de Vega", "Federico García Lorca", "Benito Pérez Galdós"],
+    "answer": "Miguel de Cervantes",
+    "category": "Literatura"
+  },
+  {
+    "question": "¿En qué país se encuentra la Torre de Pisa?",
+    "options": ["Italia", "Francia", "España", "Grecia"],
+    "answer": "Italia",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿Cuál es el cuadro más famoso de Leonardo da Vinci?",
+    "options": ["La Mona Lisa", "La Última Cena", "La Anunciación", "La Virgen de las Rocas"],
+    "answer": "La Mona Lisa",
+    "category": "Arte"
+  },
+  {
+    "question": "¿Qué país es conocido como la tierra del sol naciente?",
+    "options": ["Japón", "China", "Corea", "Tailandia"],
+    "answer": "Japón",
+    "category": "Geografía"
+  },
+  {
+    "question": "¿Quién pintó el techo de la Capilla Sixtina?",
+    "options": ["Miguel Ángel", "Leonardo da Vinci", "Rafael", "Botticelli"],
+    "answer": "Miguel Ángel",
+    "category": "Arte"
+  },
+  {
+    "question": "¿Cuál es el idioma más hablado en el mundo?",
+    "options": ["Chino mandarín", "Inglés", "Español", "Hindi"],
+    "answer": "Chino mandarín",
+    "category": "Ciencia"
+  },
+  {
+    "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+    "options": ["1939", "1945", "1914", "1929"],
+    "answer": "1939",
+    "category": "Historia"
+  }
+]

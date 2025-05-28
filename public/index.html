@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trivia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Juego de Trivia</h1>
+  <label for="category-select">Categoría:</label>
+  <select id="category-select">
+    <option value="">Todas</option>
+  </select>
+  <div id="question-container">
+    <p id="category"></p>
+    <p id="question"></p>
+    
+    <div id="options"></div>
+    <details id="answer-details">
+      <summary>Mostrar respuesta</summary>
+      <span id="answer" style="font-weight:bold;"></span>
+    </details>
+  </div>
+  <button id="next">Siguiente Pregunta</button>
+
+  <script>
+    let currentQuestion = null;
+    let currentCategory = '';
+
+    async function fetchCategories() {
+      const res = await fetch('/api/categories');
+      const categories = await res.json();
+      const select = document.getElementById('category-select');
+      categories.forEach(cat => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        select.appendChild(opt);
+      });
+    }
+
+    async function fetchQuestion() {
+      let url = '/api/question';
+      if (currentCategory) {
+        url += `?category=${encodeURIComponent(currentCategory)}`;
+      }
+      const res = await fetch(url);
+      const details = document.getElementById('answer-details');
+      if (details) details.open = false;
+      if (!res.ok) {
+        document.getElementById('question').textContent = 'No hay preguntas para esta categoría.';
+        document.getElementById('options').innerHTML = '';
+        document.getElementById('category').textContent = '';
+        document.getElementById('answer').textContent = '';
+        return;
+      }
+      const data = await res.json();
+      currentQuestion = data;
+      document.getElementById('question').textContent = data.question;
+      document.getElementById('category').textContent = `Categoría: ${data.category}`;
+      const optionsDiv = document.getElementById('options');
+      optionsDiv.innerHTML = '';
+      data.options.forEach(option => {
+        const div = document.createElement('div');
+        div.className = 'option';
+        div.textContent = option;
+        optionsDiv.appendChild(div);
+      });
+      document.getElementById('answer').textContent = data.answer;
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      const details = document.getElementById('answer-details');
+      if (details) details.open = false;
+      fetchQuestion();
+    });
+
+    document.getElementById('category-select').addEventListener('change', (e) => {
+      currentCategory = e.target.value;
+      fetchQuestion();
+    });
+
+    // Inicializar
+    fetchCategories().then(fetchQuestion);
+  </script>
+</body>
+</html>
