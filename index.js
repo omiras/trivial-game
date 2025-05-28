@@ -30,7 +30,15 @@ app.get('/api/question', (req, res) => {
 
 // Endpoint para obtener categorías únicas
 app.get('/api/categories', (req, res) => {
-  res.send('Falta implementar el endpoint /api/categories');
+
+  // 1. Vamos a recorrer el array de questions y nos vamos a quedar solamente con las categorías. 
+  let categories = questions.map(q => q.category);
+
+  // Eliminar duplicados
+  categories = _.uniq(categories);
+
+  // 2. Devolver el array en formato JSON
+  res.json(categories);
 });
 
 // Iniciar servidor
