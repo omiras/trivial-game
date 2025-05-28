@@ -31,6 +31,8 @@ En esta primera iteración, tu objetivo es implementar el endpoint `/api/questio
 
 > Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/question` desde tu navegador o usando una herramienta como [Thunderclient](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) o curl.
 
+![ejemplo de respuesta usando Thunder Client](https://oscarm.tinytake.com/media/176d469?filename=1748442446760_TinyTake28-05-2025-04-27-15_638840392417726148.png&sub_type=thumbnail_preview&type=attachment&width=799&height=576)
+
 
 
 ## Iteración 2: Implementar el endpoint `/api/categories`
