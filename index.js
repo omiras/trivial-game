@@ -37,6 +37,6 @@ app.get('/api/question', (req, res) => {
 });
 
 // Iniciar servidor
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Servidor Trivia escuchando en http://localhost:${PORT}`);
 });
