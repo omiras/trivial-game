@@ -1,3 +1,7 @@
+# Juego de trivial en arquitectura REST API
+
+Hemos implemetnado un juego de preguntas y respuestas tipo Trivial ®️ siguiendo una arquitectura REST API. El fichero _index.html_ consume una serie de endpoints del servidor que manda los datos en formato JSON. 
+
 ## Iteración 1: Implementar el endpoint `/api/question`
 
 En esta primera iteración, tu objetivo es implementar el endpoint `/api/question` en el archivo `index.js`. Este endpoint debe devolver una pregunta aleatoria del trivial en formato JSON.
@@ -25,7 +29,9 @@ En esta primera iteración, tu objetivo es implementar el endpoint `/api/questio
 }
 ```
 
-> Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/question` desde tu navegador o usando una herramienta como Postman o curl.
+> Implementa el endpoint en el lugar indicado en `index.js`. Cuando termines, podrás probarlo accediendo a `http://localhost:3001/api/question` desde tu navegador o usando una herramienta como Thunderclient o curl.
+
+
 
 ## Iteración 2: Implementar el endpoint `/api/categories`
 
