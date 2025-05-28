@@ -13,28 +13,20 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Cargar preguntas desde JSON
-let questions = JSON.parse(fs.readFileSync('./questions.json', 'utf-8'));
-
-// Endpoint para obtener categorías únicas
-app.get('/api/categories', (req, res) => {
-  const categories = [...new Set(questions.map(q => q.category))];
-  res.json(categories);
-});
+// Cargar preguntas desde JSON. En esta variable dispones siempre de todasl as preguntas de la "base de datos"
+const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf-8'));
 
 // Endpoint para obtener una pregunta aleatoria (con filtro por categoría)
 app.get('/api/question', (req, res) => {
-  const { category } = req.query;
-  let filtered = questions;
-  if (category) {
-    filtered = questions.filter(q => q.category === category);
-  }
-  if (filtered.length === 0) {
-    return res.status(404).json({ error: 'No hay preguntas para esta categoría' });
-  }
-  const randomIndex = Math.floor(Math.random() * filtered.length);
-  res.json(filtered[randomIndex]);
+  res.send('Falta implementar el endpoint /api/question');
 });
+
+// Endpoint para obtener categorías únicas
+app.get('/api/categories', (req, res) => {
+  res.send('Falta implementar el endpoint /api/categories');
+});
+
+
 
 // Iniciar servidor
 app.listen(PORT, () => {
