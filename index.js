@@ -1,6 +1,9 @@
-// 1. Use require instead of import
+// módulo de terceros
 const express = require('express');
 const morgan = require('morgan');
+const _ = require('lodash');
+
+// módulos internos
 const path = require('path');
 const fs = require('fs');
 
@@ -18,7 +21,11 @@ const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf-8'));
 
 // Endpoint para obtener una pregunta aleatoria (con filtro por categoría)
 app.get('/api/question', (req, res) => {
-  res.send('Falta implementar el endpoint /api/question');
+  // Uso el método 'sample' de la biblioteca lodash para obtener un elemento al azar de este array
+  const randomQuestion = _.sample(questions);
+
+  // usamos el método json del objeto Response para devolver una respuesta en formato JSON
+  res.status(200).json(randomQuestion);
 });
 
 // Endpoint para obtener categorías únicas
