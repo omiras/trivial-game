@@ -87,7 +87,7 @@ Si has implementado correctamente los endpoints de las iteraciones anteriores, a
 
 ### ¿Qué debes hacer en esta iteración?
 
-1. **Arranca el servidor** ejecutando `node --watch index.js` o el comando correspondiente en tu terminal.
+1. **Arranca el servidor** ejecutando `node index.js` o el comando correspondiente en tu terminal.
 2. **Abre tu navegador** y accede a [http://localhost:3001](http://localhost:3001).
 3. **Prueba la aplicación**:
    - Selecciona diferentes categorías en el selector.
