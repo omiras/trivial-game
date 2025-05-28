@@ -26,8 +26,6 @@ app.get('/api/categories', (req, res) => {
   res.send('Falta implementar el endpoint /api/categories');
 });
 
-
-
 // Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor Trivia escuchando en http://localhost:${PORT}`);
