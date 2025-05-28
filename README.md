@@ -1,6 +1,6 @@
 # Juego de trivial en arquitectura REST API
 
-Hemos implemetnado un juego de preguntas y respuestas tipo Trivial ®️ siguiendo una arquitectura REST API. El fichero _index.html_ consume una serie de endpoints del servidor que manda los datos en formato JSON. 
+Hemos implementado un juego de preguntas y respuestas tipo Trivial ®️ siguiendo una arquitectura REST API. El fichero _index.html_ consume una serie de endpoints del servidor que manda los datos en formato JSON. 
 
 ## Iteración 1: Implementar el endpoint `/api/question`
 
