@@ -85,7 +85,7 @@ En esta tercera iteración, tu objetivo es modificar el endpoint `/api/question`
 
 ## Iteración 4: Prueba la aplicación completa
 
-Si has implementado correctamente los endpoints de las iteraciones anteriores, ahora la aplicación web debería ser completamente funcional.
+Si has implementado correctamente los endpoints de las iteraciones anteriores, ahora la aplicación web debería ser completamente funcional. Deberia funcionar igual que [este demo](https://trivial-game-821y.onrender.com/)
 
 ### ¿Qué debes hacer en esta iteración?
 
