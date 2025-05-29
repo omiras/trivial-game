@@ -21,8 +21,27 @@ const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf-8'));
 
 // Endpoint para obtener una pregunta aleatoria (con filtro por categoría)
 app.get('/api/question', (req, res) => {
+
+  // objeto request.query, contiene todos los parámetros y valores de la query string
+  console.log(req.query);
+
+  // Voy a pensar que de momento, no queremos las pregutnas filtradas
+  let filteredQuestions = questions;
+
+  // ¿Quiere filtrar por categoría el usuario?
+  // Vamos a comprobar si esta variable tiene algún valor
+  if (req.query.category) {
+    // Si tiene valor, filtramos precisamente por dicho valor
+    // Filtrar las preguntas por la category ubicada en req.query.category
+    // El método filter SIEMRE crea un array nuevo
+
+    filteredQuestions = questions.filter(q => q.category == req.query.category)
+
+  }
+
+ 
   // Uso el método 'sample' de la biblioteca lodash para obtener un elemento al azar de este array
-  const randomQuestion = _.sample(questions);
+  const randomQuestion = _.sample(filteredQuestions);
 
   // usamos el método json del objeto Response para devolver una respuesta en formato JSON
   res.status(200).json(randomQuestion);
