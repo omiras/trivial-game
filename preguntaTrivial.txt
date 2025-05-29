@@ -1,0 +1,1 @@
+{"question":"¿Quién pintó la Mona Lisa?","options":["Leonardo da Vinci","Miguel Ángel","Rafael","Donatello"],"answer":"Leonardo da Vinci","category":"Arte"}
